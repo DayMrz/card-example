@@ -1,0 +1,62 @@
+.card {
+  background-color: rgba(245, 234, 222, 0.89);
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-quote:before {
+  color: #ef453e;
+  content: "\e900";
+  font-size: 2rem;
+}
+
+hr {
+  border: #ef453e 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.image {
+  background-image: url("/images/one-piece-anime-artwork.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.heading {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.subheading {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .image {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+}
